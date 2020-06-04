@@ -1,0 +1,103 @@
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+  }
+  .flex {
+    display: flex;
+  }
+  .border-btt {
+    width: 130px;
+    height: 2px;
+    background: rgb(65, 195, 99);
+    position: absolute;
+    top: 50px;
+  }
+  /* 选择区域样式 */
+  .comple-options {
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .comple-options span {
+    margin-right: 10px;
+    width: 90px;
+  }
+  .customer {
+    display: flex;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+  }
+  .cust-option {
+    width: 220px;
+    color: #6600CC;
+  }
+  /* 表格 头部 */
+  .cont-header {
+    height: 40px;
+    line-height: 40px;
+  }
+  .cont-header span {
+    color: rgb(0, 128, 0);
+    font-weight: 800;
+    margin-right: 20px;
+  }
+  .cont-options {
+    margin-right: 10px;    
+  }
+  .copy {
+    font-size: 18px;
+  }
+  .cont-copy :hover {
+    cursor: pointer;
+  }
+  .header-right {
+    margin-left: 210px;
+  }
+  
+  /* 表单 */
+  .cont-content{
+      margin-top: 10px;
+  }
+  .comple-box >>> .el-dialog{
+    width: 80%;
+  }
+  .cont-btn{
+    margin-top: 10px;
+  }
+  .cont-btn >>> .el-button--success{
+    background: rgb(153, 204, 0);
+    border-color: rgb(153, 204, 0);
+  }
+
+  /* 微信部分 */
+  .btt-header{
+    margin-top: 20px;
+  }
+  .btt-header span{
+    font-weight: 800;
+    color: rgb(0, 128, 0);
+  }
+  .btt-copy{
+    font-size: 24px;
+  }
+  .btt-copys :hover{
+    cursor: pointer;
+  }
+  .btt-box{
+    /* ;height: 70px; */
+    padding: 5px 10px;
+    width: 470px;
+    border: 2px solid rgb(66, 166, 66);
+  }
+  .copy-text>span{
+    font-style:italic;
+    margin-right: 10px;
+    display: inline-block;
+    margin-top: 5px;
+  }

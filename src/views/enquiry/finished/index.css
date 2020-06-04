@@ -1,0 +1,124 @@
+/* 头部搜索部分 */
+.jiansuo-seek {
+    display: flex;
+  }
+  .btt-btns {
+    margin-top: 37px;
+    margin-left: 10px;
+  }
+  .btt-btns >>> .el-button--primary {
+    background: rgb(65, 195, 99);
+    border-color: rgb(65, 195, 99);
+    /* border-radius: 0; */
+  }
+  .jiansuo {
+    margin-left: 25px;
+  }
+  .seek-box {
+    overflow: hidden;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 265px;
+    height: 60px;
+    border: 1px solid #ebeef5;
+  }
+  .for-box {
+    margin-bottom: 20px;
+  }
+  .seek-top {
+    display: flex;
+  }
+  .seek-left {
+    height: 30px;
+    width: 170px;
+    border-right: 1px solid #ebeef5;
+    border-bottom: 1px solid #ebeef5;
+    font-size: 12px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    line-height: 30px;
+    color: #909399;
+    font-weight: 600;
+  }
+  .seek-right {
+    text-align: center;
+    width: 95px;
+    font-size: 12px;
+    line-height: 30px;
+    height: 30px;
+    border-bottom: 1px solid #ebeef5;
+    color: #909399;
+    font-weight: 600;
+  }
+  .seek-btt {
+    display: flex;
+  }
+  .seek-btt >>> .el-input--mini .el-input__inner {
+    padding-right: 0;
+    width: 95px;
+  }
+  .input-left {
+    height: 30px;
+    width: 170px;
+    font-size: 12px;
+  }
+  .input-left >>> .el-input__inner {
+    height: 30px;
+    border-radius: 0;
+  }
+  .input-right {
+    width: 80px;
+    font-size: 12px;
+    line-height: 30px;
+  }
+  
+  /* 表头 */
+  .table-header {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #dcdfe6;
+    border-top: 3px solid rgb(65, 195, 99);
+    border-bottom: none;
+    line-height: 40px;
+    padding: 0 25px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    /* background: rgb(204, 255, 204); */
+  }
+  
+  .header-left {
+    /* font-size: 16px; */
+    /* font-weight: 800; */
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .header-max {
+    font-size: 16px;
+  }
+  .header-item {
+    /* font-size: 16px; */
+    font-weight: 200;
+  }
+  
+  /* 修改按钮样式 */
+  .jiansuo >>> .el-button--success {
+    background: rgb(65, 195, 99);
+    /* border-radius: 0; */
+  }
+  
+  /* 修改保存和修改的样式 */
+  .btt-btns >>> .el-button--success,
+  .btt-btn >>> .el-button--success {
+    background-color: rgb(153, 204, 0);
+    border-color: rgb(153, 204, 0);
+    font-size: 12px;
+  }
+  .btt-btn >>> .el-button--primary {
+    background-color: rgb(215, 215, 215);
+    border-color: rgb(215, 215, 215);
+    color: black;
+  }
+  /* .for-box >>> .el-table__body tr.current-row>td {
+    background-color: rgb(153, 204, 0);
+  } */

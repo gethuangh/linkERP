@@ -1,0 +1,170 @@
+.flex {
+    display: flex;
+  }
+  .data-box {
+    width: 1100px;
+    margin: 20px auto 0;
+  }
+  .content-box {
+    padding: 25px 45px;
+    position: relative;
+    border: 3px solid rgb(65, 195, 99);
+    margin-bottom: 40px;
+  }
+  /* 隐藏线 */
+  .content-box::before {
+    content: "";
+    width: 900px;
+    height: 4px;
+    position: absolute;
+    top: -4px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fff;
+  }
+  .content-box::after {
+    content: "";
+    width: 900px;
+    height: 4px;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fff;
+  }
+  
+  /* 表头 */
+  .data-title {
+    margin-bottom: 20px;
+  }
+  .data-title >>> .clearfix {
+    font-size: 18px;
+    margin-left: 40px;
+  }
+  .text-left {
+    margin-left: 40px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    width: 240px;
+  }
+  .text-right {
+    margin-left: 500px;
+    width: 240px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .text-flex {
+    box-sizing: border-box;
+  }
+  .text-name {
+    width: 100px;
+  }
+  /* 分析内容 柱形 */
+  .tree-title {
+    width: 1000px;
+    padding-left: 5px;
+    margin-bottom: 15px;
+    height: 25px;
+    font-weight: 800;
+    background: rgb(215, 215, 215);
+  }
+  
+  /* 部门样式 */
+  
+  .section-box > div {
+    margin-bottom: 5px;
+  }
+  .section-box span {
+    margin-right: 10px;
+  }
+  .section-box > p {
+    margin-bottom: 5px;
+  }
+  
+  /* link */
+  .link-box > .content-box {
+    padding-left: 0;
+  }
+  .link-box .tree-title {
+    /* position: absolute; */
+    /* left: 0;right: 0; */
+    margin: 0 auto;
+  }
+  .link-box .flex {
+    margin-top: 30px;
+  }
+  .purc-title {
+    position: absolute;
+    left: 160px;
+    top: 70px;
+    font-weight: 800;
+  }
+  .purc-title2 {
+    position: absolute;
+    right: 300px;
+    top: 70px;
+    font-weight: 800;
+  }
+  .purc-title3 {
+    position: absolute;
+    left: 160px;
+   bottom: 230px;
+    font-weight: 800;
+  }
+  .purc-title4 {
+    position: absolute;
+    right: 300px;
+    bottom: 230px;
+    font-weight: 800;
+  }
+  .link-title {
+    width: 1094px;
+    box-sizing: border-box;
+    padding-left: 30px;
+    height: 25px;
+    font-weight: 800;
+    margin-top: 20px;
+    background: rgb(215, 215, 215);
+  }
+  .link-titles {
+    width: 1094px;
+    box-sizing: border-box;
+    padding-left: 30px;
+    height: 25px;
+    font-weight: 800;
+    /* margin-top: 20px; */
+    background: rgb(215, 215, 215);
+    margin-bottom: 20px;
+  }
+
+
+  /* 甜甜圈样式 */
+  .doughnut-cont{
+      margin-left: 20px;
+  }
+  .cont-title{
+      font-weight: 800;
+      font-size: 16px;
+  }
+  .cont-text{
+      font-size: 14px;
+      margin-top: 40px;
+      margin-bottom: 5px;
+  }
+  .flex >span{
+      font-size: 14px;
+  }
+  .doughnut-num{
+      width: 80px;
+      height: 10px;
+      margin-left: 5px;
+  }
+  .doughnut-num >>> .el-progress-bar__outer{
+      border-radius: 0;
+  }
+  .doughnut-num >>> .el-progress-bar__inner{
+      border-radius: 0;
+  }
+  

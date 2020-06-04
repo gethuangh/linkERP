@@ -1,0 +1,317 @@
+* {
+    font-style: 12px;
+    font-style: normal;
+  }
+  /* 顶部搜索样式 */
+.to-tab >>> .el-input__inner{
+  padding: 0 5px;
+}
+.sear-box{
+  height: 60px;
+  border: 1px solid #ebeef5;
+  display: flex;
+}
+.sear-by{
+  height: 60px;
+  border-right: 1px solid #ebeef5;
+}
+.sear-top{
+  border-bottom: 1px solid #ebeef5;
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #909399;
+  font-weight: 600;
+}
+.bibie{
+  margin-top: 4px;
+}
+  .icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+  }
+  
+  .dan-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* 头部样式 */
+  .cont {
+    margin-left: 25px;
+    margin-top: 5px;
+    /* margin-top: 20px; */
+  }
+  .cont >>> .el-input__icon{
+    width: 15px;
+  }
+  .cont-top {
+    display: flex;
+    position: relative;
+  }
+  
+  
+  /* 表格默认高度 */
+  .cont-top>>>.el-table__empty-block {
+    min-height: 0px !important;
+  }
+  
+  .cont-top>>>.el-table__empty-block {
+    text-align: left;
+  }
+  
+  .cont-top>>>.el-table__empty-text {
+    width: 100%;
+    display: flex;
+    line-height: 0px !important;
+  }
+  
+  .cont-top>>>.el-button--success {
+    background-color: rgb(153, 204, 0);
+    border-color: rgb(153, 204, 0);
+    /* font-size: 14px;/ */
+  }
+  
+  .cont-top>>>.el-button--info {
+    color: black;
+    background-color: rgb(215, 215, 215);
+    border-color: rgb(215, 215, 215);
+    /* font-size: 14px; */
+  }
+  
+  .cont-top>>>.el-button--primary {
+    background-color: rgb(65, 159, 99);
+    border-color: rgb(65, 159, 99);
+    /* font-size: 14px; */
+  }
+  .un-conter>>>.el-button--primary {
+    background-color: rgb(65, 159, 99);
+    border-color: rgb(65, 159, 99);
+    /* font-size: 14px; */
+  }
+  .btn {
+    /* height: 50px; */
+    /* position: absolute; */
+  margin-top: 32px;
+  margin-left: 20px;
+  }
+  
+  .cont-table {
+    margin-top: 25px;
+  }
+  
+  .cont>>>.el-table {
+    font-size: 12px;
+  }
+  
+  /* 表格头部样式 */
+  .table-header {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #dcdfe6;
+    border-top:3px solid rgb(65, 195, 99);
+    line-height: 35px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(204, 255, 204);
+    margin-top: 25px;
+  }
+  
+  .header-left {
+    /* font-size: 16px; */
+    font-weight: 800;
+    margin-right: 20px;
+  }
+  
+  .header-item {
+    /* font-size: 16px; */
+    font-weight: 400;
+  }
+  .header-right{
+    margin-left: 20px;
+  }
+  .copy:hover{
+    cursor: pointer;
+  }
+  
+  
+  /* 时间组件样式 */
+  .itembtn >>> .el-date-editor.el-input{
+    width: 95px;
+  }
+  
+  
+  .pull>>>.el-drawer__open>div {
+    min-height: 50%;
+    max-height: 80%;
+    width: 100%;
+    height: auto !important;
+  }
+  
+  .pull>>>.el-drawer__body {
+    overflow-y: scroll;
+  }
+  
+  .flex{
+    display: flex;
+    
+  }
+  /* 全部查看样式 */
+  .btt-bj >>> .el-button--primary{
+    background-color: rgb(65, 159, 99);
+    border-color: rgb(65, 159, 99);
+  }
+  .all >>> .el-table .cell{
+    padding: 0;
+  }
+  .all >>> .el-table--mini td{
+    padding: 0 5px;
+  }
+  .all >>> .el-input__inner{
+    padding: 0;
+  border: 0;
+  }
+  .all >>> .el-select{
+    display: block;
+  }
+  .all >>> .el-input__icon{
+    width: 15px;
+  }
+
+  /* 全部报价样式 */
+  .all-header{
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .all-box{
+    margin-top: 25px;margin-left: 20px;
+  }
+  .all-cont-header{
+    display: flex;
+  }
+.btn >>> .el-button--success{
+  background: rgb(153, 204, 0);
+  border-color: rgb(153, 204, 0);
+}
+
+  
+/* 新增 */
+.addEn >>> .el-dialog{
+  width: 85%;
+}
+
+/* 已报价 */
+.chiden >>> .el-input-group__append, .el-input-group__prepend{
+  padding: 0 3px;
+}
+.from-box{
+  margin-top: 30px;
+  width: 1500px;
+}
+.he-box{
+  display: flex;
+}
+.has-box >>> .el-button--success{
+  background: rgb(153, 204, 0);
+  border-color: rgb(153, 204, 0);
+}
+.has-box{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.input-type >>> .el-date-editor.el-input{
+  width: 160px;
+}
+
+.from-header{
+  height: 40px;
+  border: 1px solid #ebeef5;
+  border-bottom: 0;
+  border-top: 3px solid rgb(65, 195, 99);
+  padding-left: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content:space-between;
+  line-height: 37px;
+}
+.span-text{
+  font-weight: 800;
+  line-height: 37px;
+  margin-right: 20px;
+}
+.toQuote >>> .el-dialog__title{
+  border-bottom: 2px solid rgb(65, 195, 99);
+  padding-right: 30px;
+  padding-bottom: 5px;
+}
+
+.toQuote >>> .undefined{
+  /* display: none; */
+  /* width: 0;
+  padding: 0;
+  height: 0; */
+}
+.toQuote >>> .el-table__expand-icon>.el-icon{
+  /* display: none; */
+}
+.toQuote >>> .el-table__expanded-cell[class*=cell]{
+  padding: 0;
+}
+.toQuote >>> .el-dialog__body{
+  width: 1300px;
+}
+
+.chiden >>> .el-table tr{
+  background: rgb(204, 240, 200);
+ }
+ /*鼠标移入某行时的背景色*/
+.chiden  >>> .el-table--enable-row-hover .el-table__body tr:hover>td {
+  background: rgb(204, 240, 200);
+}
+/* 改变鼠标点击时的背景色 */
+.chiden >>>.el-table__body tr.current-row>td {
+  background: rgb(204, 240, 200);
+}
+.chiden >>> .sutom-white{
+  background-color: #ffffff !important;
+}
+.chiden{
+  margin-bottom: 40px;
+}
+
+
+/* 编辑报价单底部 */
+.alter{
+  display: flex;
+  margin-top: 10px;
+}
+.alter p{
+margin-left: 10px;
+}
+.alter div{
+  margin-right: 5px;
+}
+.to-btn{
+  margin-top: 25px;
+}
+.to-btn >>> .el-button--success{
+  background: rgb(153, 204, 0);
+  border-color: rgb(153, 204, 0);
+}
+.to-btn >>> .el-button--primary{
+background: rgb(65, 195, 99);
+border-color: rgb(65, 195, 99);
+}
+
+/* 单选样式 */
+.r-radio >>> .el-radio__inner{
+  border-color: #ccc;
+  /* border-radius: 0; */
+}

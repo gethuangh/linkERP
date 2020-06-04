@@ -1,0 +1,505 @@
+
+.finance{
+
+    .flex-model {
+        display: flex;
+        align-items: center;
+    }
+
+    .original-font {
+        color: #606266;
+    }
+
+    .blue-font {
+        color: #00f;
+    }
+    .green-font {
+        color: #008000;
+    }
+
+    .el-pagination__jump {
+        margin-right: 50px;
+    }
+
+    .el-table .cell, .el-table th div {
+        padding: 0;
+    }
+    .el-table--border td:first-child .cell, .el-table--border th:first-child .cell {
+        padding-left: 0;
+    }
+
+    .el-input--mini .el-input__inner {
+        height: 24px;
+        line-height: 23px;
+        border-radius: 0;
+    }
+
+    .el-input--mini .el-input__icon {
+        line-height: 23px;
+    }
+
+    .el-table {
+        border-color: #D7D7D7;
+    }
+
+    .el-input,
+    .el-select {
+        width: 100%;
+    }
+
+    .el-table .el-table__header th.is-leaf {
+        background-color: #D7D7D7;
+        border-color: #D7D7D7;
+        color: #333;            
+    }
+    .el-table--mini td, .el-table--mini th {
+        padding: 0 0;
+        border-color: #D7D7D7;
+        background: #F5F5F5;
+    }
+
+    .title,
+    .search {
+        color: #fff;
+        border: none;
+        font-size: 14px;
+    }
+    .search {
+        margin-right: 10px;
+    }
+
+    .search {
+        background: #41C363;
+        padding: 5px 15px;
+    }
+
+    .blue-decoration {
+        text-decoration: underline;
+        color: #00f;
+    }
+    .green-decoration {
+        text-decoration: underline;
+        color: #41C363;
+    }
+    .blue-decoration:hover,
+    .green-decoration:hover {
+        cursor: pointer;
+    }
+
+    .go-associate,
+    .go-write-off,
+    .go-offset {
+        color: #fff;
+        border: none;
+        padding: 3px 7px;            
+    }
+    .go-associate {
+        background: #FF99CC;
+    }
+    .go-write-off {
+        background: #99CC00;
+    }
+    .go-offset {
+        background: #3366FF;
+    }
+
+
+    .being-associate {
+        .title {
+            background: #FF99CC;
+        }
+
+        .el-table--mini td, .el-table--mini th {
+            background: #CCFFFF;
+        }
+    }
+
+    .el-table .associate-back {
+        td, th {
+            background: #CCFFFF;
+        }
+    }
+
+    .being-write-off {
+        .title {
+            background: #99CC00;
+        }
+    }
+
+    .being-offset {
+        .title {
+            background: #3366FF;
+        }
+    }
+
+
+    //弹窗
+
+    .el-dialog__header {    
+        background: #41C363;
+
+        .el-dialog__title {
+            color: #fff;
+        }
+        .el-dialog__headerbtn .el-dialog__close {
+            color: #fff;
+        }
+    }
+
+    .el-dialog__body {
+        background: #F5F5F5;
+    }
+    .bacground-white .el-dialog__body {
+        background: #fff;
+    }
+
+    .operating-btn {
+        display: flex;
+        padding-bottom: 20px;
+
+        .operating-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            padding-right: 30px;
+
+            .iconfont {
+                font-size: 35px;
+            }
+        }
+        .operating-item:hover {
+            cursor: pointer;
+            color: $theme-color;
+        }
+    }
+
+    .info-list {
+        padding-bottom: 20px;
+        display: flex;
+        // align-items: stretch;
+
+        .info-item {
+            border-right: 1px solid #d7d7d7;
+
+            >div {
+                display: flex;
+
+                .el-input {
+                    width: 300px;
+                }
+            }
+        }
+        .info-item:last-child {
+            border-right: none;
+        }    
+
+        span {
+            padding-right: 50px;
+            line-height: 22px;
+        }
+
+        .iconfont {
+            font-size: 25px;
+            color: #BA0808;
+        }
+    }
+
+    .table-info {
+        border: 1px solid;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+
+        .price-all {
+            color: #00f;        
+            font-size: 12px;
+            margin-bottom: 25px;
+
+            p {
+                display: flex;            
+                padding-left: 125px;
+
+                width: 290px;
+                border-bottom: 1px solid #777;
+
+                span {
+                    display: block;
+                    width: 95px;
+                    text-align: right;
+                }
+
+                .record-cost {
+                    display: block;
+                    background: #ED6618;
+                    color: #fff;
+                    width: auto;
+                    height: 18px;
+                    line-height: 18px;
+                    margin: 3px auto;
+                    padding: 0 5px;
+                    border-radius: 3px;
+                }
+                .record-cost:hover {
+                    cursor: pointer;
+                }
+            }
+            p:nth-child(1) {
+                height: 30px;
+                line-height: 30px;
+            }
+            p:nth-child(2) {
+                height: 45px;
+                line-height: 67px;
+            }
+            p:nth-child(3) {
+                height: 24px;
+                line-height: 24px;
+            }
+        }
+
+        .distance-one {
+            padding-left: 795px;
+        }
+        .distance-two {
+            padding-left: 710px;
+        }
+        .distance-three {
+            padding-left: 550px;
+        }
+
+        .price-chare-all {
+            padding: 30px 0 30px 610px;
+            display: flex;
+            text-align: center;
+            font-size: 12px;
+            color: #333;
+
+            p {
+                width: 75px;
+            }
+            span {
+                width: 120px;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .table-remove,
+    .table-select {
+        color: #fff;
+        border: none;
+        padding: 3px 7px;
+        font-size: 12px;
+    }
+    .table-remove {
+        background: #777;
+    }
+    .table-select {
+        background: #41C363;
+    }
+
+    .pop-ups-footer {
+        display: flex;
+
+        p {
+            margin-right: 30px;
+
+            span:nth-child(2) {
+                padding: 3px 20px;
+                border-bottom: 1px solid;
+            }
+        }
+    }
+
+    .el-popover {
+        width: 1825px;
+        margin: 35px 0 35px -20px;
+    }
+
+
+    // 新增
+    .form-right {
+        padding-left: 35px;
+    }
+
+    .form-item,
+    .el-form-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+
+        .el-form-item__error {
+            padding-top: 2px;
+        }
+
+        .el-select {
+            width: 100%;
+        }
+
+        .form-item-title,
+        .el-form-item__label {
+            width: 95px;
+        }
+
+        .el-form-item__label,
+        .el-form-item__content {
+            line-height: 23px;
+        }
+
+        .cont-width-one,
+        .cont-width-one .el-input {
+            width: 120px;
+        }
+        .cont-width-two,
+        .cont-width-two .el-input {
+            width: 365px;
+        }        
+    }
+    .red-font .el-form-item__label,
+    .red-font input {
+        color: #f00;
+        font-weight: 700;
+    }
+}
+
+.application-box {
+    display: flex;
+    align-items: center;
+    width: 1450px;
+    height: 100px;
+    margin-bottom: 10px;
+
+    >div:first-child {
+        width: 60px;
+        text-align: center;
+        height: 98px;
+        line-height: 98px;
+        border: 1px solid #606266;
+    }
+    >div:nth-child(2) {
+        width: 145px;
+    }
+    >div:nth-child(3) {
+        flex: 1;
+    }
+
+    .flex-col {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    p, .el-input__inner {        
+        // line-height: 24px;
+        border: 1px solid #606266;
+        border-width: 0 1px 1px 0;
+        height: 25px;
+        // flex: 1;
+    }
+    // .el-input__inner {
+    //     height: 25px;
+    // }
+    p {
+        // height: 25px;
+        text-align: center;
+    }
+    p:first-child,.el-input:first-child .el-input__inner {
+        border-top: 1px solid #606266;
+    }
+
+    .el-input__inner {
+        border-radius: 0;
+    }
+
+    .blue-font .el-input__inner {
+        color: #00f;
+    }
+
+    .el-input__inner:focus {
+        border-color: #606266;
+    }
+}
+
+.order-detail {
+    width: 1555px;
+
+    .first-row {
+        text-align: center;
+        
+
+        p {
+            border: 1px solid #606266;
+            border-width: 1px 0 1px 1px;
+            height: 37px;
+            line-height: 37px;
+            font-size: 16px;
+        }
+        p:last-child {
+            border-right: 1px solid #606266;
+        }
+
+        .flex-model {
+            justify-content: space-between;
+        }
+    }
+
+    .second-row {
+        margin-top: -1px;
+
+        >div:first-child {
+            width: 60px;
+            text-align: center;
+            height: 98px;
+            line-height: 98px;
+            border: 1px solid #606266;
+            border-width: 0 1px 1px 1px;           
+        }
+        >div:nth-child(2) {
+            width: 145px;
+        }
+        >div:nth-child(4) {
+            width: 24px;
+            height: 98px;
+            text-align: center;
+            border: 1px solid #606266;
+            border-width: 0 1px 1px 0;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        textarea {
+            border: 1px solid #606266;
+            border-width: 0 1px 1px 0;
+            width: 577px;
+            height: 98px;
+        }
+
+        p, .el-input__inner {
+            border: 1px solid #606266;
+            border-width: 0 1px 1px 0;        
+        }
+        p {
+            text-align: center;
+            height: 24px;
+            line-height: 24px;
+        }
+        .el-input .el-input__inner {
+            height: 25px;
+            line-height: 24px;
+        }
+        .el-input__inner:focus {
+            border-color: #606266;
+        }
+        .el-select:first-child .el-input__inner {
+            height: 24px;
+        }
+        .green-font .el-select .el-input__inner{
+            color: #008000;
+        }
+    }
+}
