@@ -13,7 +13,7 @@
         </template>
         <el-menu-item-group>
           <el-menu-item>
-            <router-link to="/supplier/ContactAdd">- 新增</router-link>
+            <router-link to="/supplier/SupplierAdd">- 新增</router-link>
           </el-menu-item>
           <el-menu-item index="/supplier/index">
             <router-link to="/supplier/index">- 查看/编辑</router-link>
@@ -30,7 +30,7 @@
         </template>
         <el-menu-item-group>
           <el-menu-item>
-            <router-link to="/supplier/SupplierAdd">- 新增</router-link>
+            <router-link to="/supplier/ContactAdd">- 新增</router-link>
           </el-menu-item>
           <el-menu-item index="/supplier/contact">
             <router-link to="/supplier/contact">- 查看/编辑</router-link>

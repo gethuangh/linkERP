@@ -45,3 +45,19 @@ export const supLinkmans = params => {
         params
     })
 };
+// 供应商新增
+export const insertSupplier = data => {
+    return service({
+        url: '/linkerp/supplier/insertSupplier',
+        method: 'post',
+        data
+    })
+};
+// 新建供应商联系人
+export const supLinkman = data => {
+    return service({
+        url: '/linkerp/supplier/supLinkman',
+        method: 'post',
+        data
+    })
+};

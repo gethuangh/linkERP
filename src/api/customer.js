@@ -54,3 +54,12 @@ export const partner = params => {
         params
     })
 }
+
+// 询价单批量新增
+export const customerAdd = data => {
+    return service({
+        url: '/linkerp/client/customerAdd',
+        method: 'post',
+        data
+    })
+};
