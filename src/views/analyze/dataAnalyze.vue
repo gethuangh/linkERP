@@ -70,12 +70,12 @@
           <!-- 一个表 -->
           <div class="data-tree" style="width: 480px;">
             <tree
-              :cls="kh1.main"
-              :name="kh1.name"
-              :titile="kh1.titile"
-              :data="kh1.data"
-              :color="kh1.color"
-              :num="kh1.num"
+              :cls="kh2.main"
+              :name="kh2.name"
+              :titile="kh2.titile"
+              :data="kh2.data"
+              :color="kh2.color"
+              :num="kh2.num"
             ></tree>
           </div>
         </div>
@@ -84,23 +84,23 @@
           <!-- 一个表 -->
           <div class="data-tree" style="width: 480px;">
             <tree
-              :cls="kh1.main"
-              :name="kh1.name"
-              :titile="kh1.titile"
-              :data="kh1.data"
-              :color="kh1.color"
-              :num="kh1.num"
+              :cls="kh3.main"
+              :name="kh3.name"
+              :titile="kh3.titile"
+              :data="kh3.data"
+              :color="kh3.color"
+              :num="kh3.num"
             ></tree>
           </div>
           <!-- 一个表 -->
           <div class="data-tree" style="width: 480px;">
             <tree
-              :cls="kh1.main"
-              :name="kh1.name"
-              :titile="kh1.titile"
-              :data="kh1.data"
-              :color="kh1.color"
-              :num="kh1.num"
+              :cls="kh4.main"
+              :name="kh4.name"
+              :titile="kh4.titile"
+              :data="kh4.data"
+              :color="kh4.color"
+              :num="kh4.num"
             ></tree>
           </div>
         </div>
@@ -114,7 +114,7 @@
         </div>
         <div class="flex">
           <pie :purc="purc"></pie>
-          <pie :purc="purc"></pie>
+          <pie :purc="purc1"></pie>
         </div>
       </div>
 
@@ -152,17 +152,17 @@
           <div class="tree-title">LINK JAPAN</div>
           <div class="flex">
             <div class="purc-title">比例：采购报价 / 客户询价</div>
-            <div class="purc-title2">比例：采购报价 / 客户询价</div>
-            <pie :purc="purc"></pie>
-            <pie :purc="purc"></pie>
+            <div class="purc-title2">比例：销售报价 / 销售订单</div>
+            <pie :purc="purc2"></pie>
+            <pie :purc="purc3"></pie>
           </div>
           <!-- 分割 -->
-          <div class="link-title">LINK JAPAN</div>
+          <div class="link-title">LINK EUROPE</div>
           <div class="flex">
             <div class="purc-title3">比例：采购报价 / 客户询价</div>
-            <div class="purc-title4">比例：采购报价 / 客户询价</div>
-            <pie :purc="purc"></pie>
-            <pie :purc="purc"></pie>
+            <div class="purc-title4">比例：销售报价 / 销售订单</div>
+            <pie :purc="purc4"></pie>
+            <pie :purc="purc5"></pie>
           </div>
         </div>
       </div>
@@ -172,14 +172,14 @@
         <div class="content-box">
           <!-- 销售部 -->
           <div class="link-titles">销售部</div>
-            <!-- 第一部分 -->
+          <!-- 第一部分 -->
           <div class="doughnut-box flex">
             <div class="doughnut-cont">
               <p class="cont-title">客户询价</p>
               <div class="cont-text">
                 <p>国际贸易部： xxxx条</p>
-                <p>国际贸易部： xxxx条</p>
-                <p>国际贸易部： xxxx条</p>
+                <p>终端业务部： xxxx条</p>
+                <p>市场销售部： xxxx条</p>
               </div>
             </div>
             <doughnut :doughnut="doughnut"></doughnut>
@@ -209,14 +209,14 @@
               </div>
             </div>
           </div>
-            <!-- 第二部分 -->
+          <!-- 第二部分 -->
           <div class="doughnut-box flex">
             <div class="doughnut-cont">
-              <p class="cont-title">客户询价</p>
+              <p class="cont-title">销售报价</p>
               <div class="cont-text">
                 <p>国际贸易部： xxxx条</p>
-                <p>国际贸易部： xxxx条</p>
-                <p>国际贸易部： xxxx条</p>
+                <p>终端业务部： xxxx条</p>
+                <p>市场销售部： xxxx条</p>
               </div>
             </div>
             <doughnut :doughnut="doughnut"></doughnut>
@@ -247,11 +247,11 @@
             </div>
 
             <div class="doughnut-cont">
-              <p class="cont-title">客户询价</p>
+              <p class="cont-title">销售订单</p>
               <div class="cont-text">
                 <p>国际贸易部： xxxx条</p>
-                <p>国际贸易部： xxxx条</p>
-                <p>国际贸易部： xxxx条</p>
+                <p>终端业务部： xxxx条</p>
+                <p>市场销售部： xxxx条</p>
               </div>
             </div>
             <doughnut :doughnut="doughnut"></doughnut>
@@ -283,15 +283,15 @@
           </div>
 
           <!-- 采购部 -->
-           <div class="link-titles">采购部</div>
-            <!-- 第二部分 -->
+          <div class="link-titles">采购部</div>
+          <!-- 第二部分 -->
           <div class="doughnut-box flex">
             <div class="doughnut-cont">
-              <p class="cont-title">客户询价</p>
+              <p class="cont-title">采购报价</p>
               <div class="cont-text">
                 <p>国际贸易部： xxxx条</p>
-                <p>国际贸易部： xxxx条</p>
-                <p>国际贸易部： xxxx条</p>
+                <p>终端业务部： xxxx条</p>
+                <p>市场销售部： xxxx条</p>
               </div>
             </div>
             <doughnut :doughnut="doughnut"></doughnut>
@@ -322,11 +322,11 @@
             </div>
 
             <div class="doughnut-cont">
-              <p class="cont-title">客户询价</p>
+              <p class="cont-title">采购订单</p>
               <div class="cont-text">
                 <p>国际贸易部： xxxx条</p>
-                <p>国际贸易部： xxxx条</p>
-                <p>国际贸易部： xxxx条</p>
+                <p>终端业务部： xxxx条</p>
+                <p>市场销售部： xxxx条</p>
               </div>
             </div>
             <doughnut :doughnut="doughnut"></doughnut>
@@ -359,12 +359,12 @@
         </div>
       </div>
 
-       <!-- 职员 -->
+      <!-- 职员 -->
       <div class="link-box">
         <div class="content-box">
           <!-- 销售部 -->
           <div class="link-titles">职员</div>
-            <!-- 第一部分 -->
+          <!-- 第一部分 -->
           <div class="doughnut-box flex">
             <div class="doughnut-cont">
               <p class="cont-titles">销售部</p>
@@ -372,7 +372,7 @@
                 <p>国际贸易部： xxxx条</p>
                 <p>国际贸易部： xxxx条</p>
                 <p>国际贸易部： xxxx条</p>
-              </div> -->
+              </div>-->
             </div>
             <doughnut :doughnut="doughnut"></doughnut>
             <div style="display:black;">
@@ -401,11 +401,8 @@
               </div>
             </div>
           </div>
-          
         </div>
       </div>
-
-
     </div>
   </div>
 </template>
@@ -435,10 +432,75 @@ export default {
         data: [10, 52, 200, 334, 390, 330, 220],
         color: ["rgb(153,204,0)"]
       },
+      kh2: {
+        main: "main",
+        name: ["snb", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+        titile: "采购订单    ",
+        num: "1560010条",
+        data: [10, 52, 200, 334, 390, 330, 220],
+        color: ["rgb(153,204,0)"]
+      },
+      kh3: {
+        main: "main",
+        name: ["snb", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+        titile: "销售报价    ",
+        num: "1560010条",
+        data: [10, 52, 200, 334, 390, 330, 220],
+        color: ["rgb(153,204,0)"]
+      },
+      kh4: {
+        main: "main",
+        name: ["snb", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+        titile: "销售订单    ",
+        num: "1560010条",
+        data: [10, 52, 200, 334, 390, 330, 220],
+        color: ["rgb(153,204,0)"]
+      },
       // 采购数据
       purc: {
         data: ["视频广告", "搜索引擎"],
         title: "采购询价比(条目数)",
+        datas: [
+          { value: 335, name: "视频广告" },
+          { value: 1548, name: "搜索引擎" }
+        ]
+      },
+      // 采购数据
+      purc1: {
+        data: ["视频广告", "搜索引擎"],
+        title: "销售订单(报价比)",
+        datas: [
+          { value: 335, name: "视频广告" },
+          { value: 1548, name: "搜索引擎" }
+        ]
+      },
+      purc2: {
+        data: ["视频广告", "搜索引擎"],
+        title: "销售订单(报价比)",
+        datas: [
+          { value: 335, name: "视频广告" },
+          { value: 1548, name: "搜索引擎" }
+        ]
+      },
+      purc3: {
+        data: ["视频广告", "搜索引擎"],
+        title: "销售订单/报价比（条目数）",
+        datas: [
+          { value: 335, name: "视频广告" },
+          { value: 1548, name: "搜索引擎" }
+        ]
+      },
+      purc4: {
+        data: ["视频广告", "搜索引擎"],
+        title: "采购询报比（条目数）",
+        datas: [
+          { value: 335, name: "视频广告" },
+          { value: 1548, name: "搜索引擎" }
+        ]
+      },
+      purc5: {
+        data: ["视频广告", "搜索引擎"],
+        title: "销售订单/报价比（条目数）",
         datas: [
           { value: 335, name: "视频广告" },
           { value: 1548, name: "搜索引擎" }
@@ -462,7 +524,8 @@ export default {
           { value: 135, name: "视频广告" },
           { value: 1548, name: "搜索引擎" }
         ]
-      }
+      },
+      data: ""
     };
   },
   components: {
@@ -470,7 +533,13 @@ export default {
     pie,
     ds,
     doughnut
-  }
+  },
+  created() {
+    // 获取浏览器数据
+    this.data = JSON.parse(sessionStorage.getItem("data"));
+    console.log(this.data);
+  },
+  mounted() {}
 };
 </script>
 

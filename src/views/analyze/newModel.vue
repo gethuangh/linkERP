@@ -21,13 +21,13 @@
           <p class="newP">时间</p>
           <div class="time" style="width:120px;">
             <p>时间段</p>
-            <selects :pla="pla" @fnc="getValue" :options="opstions"></selects>
+            <selects :pla="pla" @pick="getValue" :options="opstions"></selects>
           </div>
 
           <div class="time">
             <p>指定时间段</p>
-            <picker :time="creatTime"></picker>
-            <picker :time="endTime"></picker>
+            <picker :time="creatTime" @timeq="timeq1"></picker>
+            <picker :time="endTime" @timeq="timeq2"></picker>
           </div>
         </div>
 
@@ -36,17 +36,17 @@
           <p class="newP">部门</p>
           <div class="time" style="width:150px;">
             <p>区域</p>
-            <selects :pla="qy" @fnc="getValue" :options="opstions"></selects>
+            <selects :pla="qy" @fnc="getValue1" :options="opstions"></selects>
           </div>
 
           <div class="time" style="width:150px;">
             <p>销售部</p>
-            <selects :pla="xs" @fnc="getValue" :options="opstions"></selects>
+            <selects :pla="xs" @fnc="getValue2" :options="opstions"></selects>
           </div>
 
           <div class="time" style="width:150px;">
             <p>采购部</p>
-            <selects :pla="cg" @fnc="getValue" :options="opstions"></selects>
+            <selects :pla="cg" @fnc="getValue3" :options="opstions"></selects>
           </div>
         </div>
 
@@ -55,17 +55,17 @@
           <p class="newP">职员</p>
           <div class="time" style>
             <p>区域</p>
-            <selects :pla="qy" @fnc="getValue" :options="opstions"></selects>
+            <selects :pla="qy" @fnc="getValue4" :options="opstions"></selects>
           </div>
 
           <div class="time" style>
             <p>销售部</p>
-            <selects :pla="cg" @fnc="getValue" :options="opstions"></selects>
+            <selects :pla="cg" @fnc="getValue5" :options="opstions"></selects>
           </div>
 
           <div class="time" style>
             <p>采购部</p>
-            <selects :pla="cg" @fnc="getValue" :options="opstions"></selects>
+            <selects :pla="cg" @fnc="getValue6" :options="opstions"></selects>
           </div>
         </div>
 
@@ -74,12 +74,12 @@
           <p class="newP">产品</p>
           <div class="time" style>
             <p>指定型号</p>
-            <selects :pla="xh" @fnc="getValue" :options="opstions"></selects>
+            <selects :pla="xh" @fnc="getValue7" :options="opstions"></selects>
           </div>
 
           <div class="time" style>
             <p>品牌</p>
-            <selects :pla="pp" @fnc="getValue" :options="opstions"></selects>
+            <selects :pla="pp" @fnc="getValue8" :options="opstions"></selects>
           </div>
         </div>
 
@@ -88,17 +88,17 @@
           <p class="newP">客户</p>
           <div class="time" style>
             <p>指定客户名称</p>
-            <selects :pla="kh" @fnc="getValue" :options="opstions"></selects>
+            <selects :pla="kh" @fnc="getValue9" :options="opstions"></selects>
           </div>
 
           <div class="time" style="width:150px;">
             <p>客户类别</p>
-            <selects :pla="lb" @fnc="getValue" :options="opstions"></selects>
+            <selects :pla="lb" @fnc="getValue10" :options="opstions"></selects>
           </div>
 
           <div class="time" style="width:150px;">
             <p>客户分布</p>
-            <selects :pla="xz" @fnc="getValue" :options="opstions"></selects>
+            <selects :pla="xz" @fnc="getValue11" :options="opstions"></selects>
           </div>
         </div>
 
@@ -107,25 +107,28 @@
           <p class="newP">供应商</p>
           <div class="time" style>
             <p>指定供应商名称</p>
-            <selects :pla="gyskh" @fnc="getValue" :options="opstions"></selects>
+            <selects :pla="gyskh" @fnc="getValue12" :options="opstions"></selects>
           </div>
 
           <div class="time" style="width:140px;">
             <p>供应商类别</p>
-            <selects :pla="gyslb" @fnc="getValue" :options="opstions"></selects>
+            <selects :pla="gyslb" @fnc="getValue13" :options="opstions"></selects>
           </div>
 
           <div class="time" style="width:140px;">
             <p>供应商分布</p>
-            <selects :pla="gysxz" @fnc="getValue" :options="opstions"></selects>
+            <selects :pla="gysxz" @fnc="getValue14" :options="opstions"></selects>
           </div>
         </div>
       </div>
-      <div class="currency flex"><span style="margin-right:20px;margin-top:2px;">分析结果货币</span>  <selects :pla="hb" @fnc="getValue" :options="opstions"></selects></div>
-      
+      <div class="currency flex">
+        <span style="margin-right:20px;margin-top:2px;">分析结果货币</span>
+        <selects :pla="hb" @fnc="getValue15" :options="opstions"></selects>
+      </div>
+
       <div class="bt" style="margin-top:20px;">
         <el-button @click="hreData" type="warning" size="mini">查看分析结果</el-button>
-        </div>
+      </div>
     </div>
 
     <!-- <selects :options="opstions"></selects>
@@ -139,7 +142,24 @@ import picker from "./component/picker";
 export default {
   data() {
     return {
-      hb:"选择货币",
+      value2: "",
+      value1: "",
+      val1: "",
+      val2: "",
+      val3: "",
+      val4: "",
+      val5: "",
+      val6: "",
+      val7: "",
+      val8: "",
+      val9: "",
+      val10: "",
+      val12: "",
+      val13: "",
+      val14: "",
+      val15: "",
+      val11: "",
+      hb: "选择货币",
       pla: "选择时间段",
       gyskh: "指定供应商名称",
       gyslb: "选择供应商类别",
@@ -222,12 +242,81 @@ export default {
     //   多选取值
     changeCheck(item) {
       console.log(item.id);
+      console.log(this.checkList);
     },
-    getValue(value) {
-      console.log(value);
+    getValue(value) {},
+    getValue1(value) {
+      this.val1 = value;
     },
-    hreData(){
-      this.$router.push({path:'/analyze/dataAnalyze'})
+    getValue2(value) {
+      this.val2 = value;
+    },
+    getValue3(value) {
+      this.val3 = value;
+    },
+    getValue4(value) {
+      this.val4 = value;
+    },
+    getValue5(value) {
+      this.val5 = value;
+    },
+    getValue6(value) {
+      this.val6 = value;
+    },
+    getValue7(value) {
+      this.val7 = value;
+    },
+    getValue8(value) {
+      this.val8 = value;
+    },
+    getValue9(value) {
+      this.val9 = value;
+    },
+    getValue10(value) {
+      this.val10 = value;
+    },
+    getValue11(value) {
+      this.val11 = value;
+    },
+    getValue12(value) {
+      this.val12 = value;
+    },
+    getValue13(value) {
+      this.val13 = value;
+    },
+    getValue14(value) {
+      this.val14 = value;
+    },
+    getValue15(value) {
+      this.val15 = value;
+    },
+    hreData() {
+      let data = {
+        startingTime: this.value1,
+        endTime: this.value2,
+        salesmanId: this.val5,
+        buyerId: this.val6,
+        brandId: this.val8,
+        clientId: this.val9,
+        category: this.val10,
+        connectionCountry: this.val11,
+        patternId: this.val7,
+        supId: this.val12,
+        supType: this.val13,
+        vendorRelease: this.val14
+      };
+      this.$router.push({
+        path: "/analyze/dataAnalyze"
+      });
+      // 把数据存到浏览器中，关闭浏览器清除
+      sessionStorage.setItem("data", JSON.stringify(data));
+    },
+    // 指定时间段
+    timeq1(val) {
+      this.value1 = val;
+    },
+    timeq2(val) {
+      this.value2 = val;
     }
   }
 };
@@ -293,7 +382,7 @@ export default {
   padding-right: 24px;
 }
 
-.currency{
+.currency {
   margin-top: 20px;
 }
 </style>

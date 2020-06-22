@@ -641,7 +641,6 @@ export default {
         pageSize: 10
       };
       enquiryAllList(data).then(res => {
-        console.log(data);
         this.total = res.result.total;
         this.tableData = res.result.list;
         let row = {};
@@ -652,6 +651,7 @@ export default {
       });
     },
     handleScroll(event) {
+      //标准浏览器中：定义一个形参event，但当事件触发的时候，并没有给event赋实际的值，则浏览器会把”事件“的对象赋给这个形参e，这时这个e是个系统级的对象：事件；
       const scrollDistance =
         // 正文全文高
         event.target.scrollHeight -
@@ -659,13 +659,15 @@ export default {
         event.target.scrollTop -
         // 可见区域的宽度
         event.target.clientHeight;
+      // 滚动条距离底部小于等于0证明已经到底了，可以请求接口了
       if (scrollDistance <= 20 && this.lookAll) {
-        // 滚动条距离底部小于等于0证明已经到底了，可以请求接口了
+        //这个开关是为了避免请求数据中 再次被请求
         if (this.onOff) return;
         this.onOff = true;
+        // 当前页数和总页数在第一次请求数据就要保存起来
         let pageNum = this.pageNum;
+        //当前页数小于总页数 就请求
         if (pageNum < this.pages) {
-          //当前页数小于总页数 就请求
           pageNum += 1;
           let data = { pageNumber: pageNum, pageSize: 10 };
           enquiryAllList(data).then(res => {
@@ -686,11 +688,11 @@ export default {
         args = arguments; // 取throttle执行作用域的this
         if (now - previous > wait) {
           fn.apply(context, args); // 用apply指向调用throttle的对象，相当于throttle.fn(args);
-          console.log("执行节流");
           previous = now;
         }
       };
     },
+    // 如果不封装 直接调用的话，每次调用都会创建一个新的(匿名)函数 [请参考MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/EventTarget/addEventListener)
     throttleFun(event) {
       this.throttle(this.handleScroll(event), 1000);
     }
