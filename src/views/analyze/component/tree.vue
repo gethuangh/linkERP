@@ -60,7 +60,7 @@ export default {
           }
         },
         title: {
-          text: this.titile + this.num,
+          text: this.titile + this.num + "条",
           x: "10%",
           y: "10%",
           textStyle: {

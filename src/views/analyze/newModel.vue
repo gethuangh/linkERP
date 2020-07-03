@@ -21,7 +21,7 @@
           <p class="newP">时间</p>
           <div class="time" style="width:120px;">
             <p>时间段</p>
-            <selects :pla="pla" @pick="getValue" :options="opstions"></selects>
+            <selects :pla="pla" @fnc="getValue" @pick="getValue" :options="opstions"></selects>
           </div>
 
           <div class="time">
@@ -199,23 +199,23 @@ export default {
       checkList: [],
       opstions: [
         {
-          value: "1",
+          value: "今天",
           label: "今天"
         },
         {
-          value: "2",
+          value: "本周",
           label: "本周"
         },
         {
-          value: "3",
+          value: "本月",
           label: "本月"
         },
         {
-          value: "4",
+          value: "本季度",
           label: "本季度"
         },
         {
-          value: "5",
+          value: "本年度",
           label: "本年度"
         }
       ],
@@ -230,7 +230,8 @@ export default {
           value: "选项5",
           label: "北京烤鸭"
         }
-      ]
+      ],
+      timequ: ""
     };
   },
   components: {
@@ -241,10 +242,11 @@ export default {
   methods: {
     //   多选取值
     changeCheck(item) {
-      console.log(item.id);
       console.log(this.checkList);
     },
-    getValue(value) {},
+    getValue(value) {
+      this.timequ = value;
+    },
     getValue1(value) {
       this.val1 = value;
     },
@@ -290,7 +292,9 @@ export default {
     getValue15(value) {
       this.val15 = value;
     },
+    // 点击查看分析
     hreData() {
+      sessionStorage.removeItem(data);
       let data = {
         startingTime: this.value1,
         endTime: this.value2,
@@ -308,8 +312,24 @@ export default {
       this.$router.push({
         path: "/analyze/dataAnalyze"
       });
-      // 把数据存到浏览器中，关闭浏览器清除
+      // 当前日期
+      let myDate = new Date();
+      let dateString = myDate.toLocaleDateString();
+      let content = {
+        // 分析内容
+        checkList: this.checkList,
+        // 时间段
+        timequ: this.timequ,
+        // 当前时间
+        dateString: dateString,
+        // 分析结果货币
+        rmb: this.val15
+      };
+
+      // 把下拉数据存到浏览器中
       sessionStorage.setItem("data", JSON.stringify(data));
+      // 存储下一个页面需要直接显示的数据
+      sessionStorage.setItem("content", JSON.stringify(content));
     },
     // 指定时间段
     timeq1(val) {
