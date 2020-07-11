@@ -14,19 +14,13 @@ const service = axios.create({
     baseURL: 'http://47.113.116.202:8080', //铭灏
     timeout: 5000
 });
-
 service.interceptors.request.use(
     config => {
-
         Loading.service
-
         config.headers['Content-Type'] = 'application/json';
         // config.headers['token'] = '';
-
         return config;
-
     }, error => { //请求错误处理
-
         Message({
             showClose: true,
             message: '请求发生错误',
@@ -40,8 +34,6 @@ service.interceptors.response.use(
     response => { //成功请求到数据
 
         Loading.service().close()
-
-
 
         if (response.data.code === 0) {
             return response.data

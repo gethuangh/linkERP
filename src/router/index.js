@@ -16,27 +16,35 @@ import enquiryMenu from '@/menu/enquiryMenu'
 import quoteMenu from '@/menu/quoteMenu'
 import analyzeMenu from '@/menu/analyzeMenu'
 import financeMenu from '@/menu/financeMenu'
-
+import login from '../views/login/login.vue'
 Vue.use(VueRouter)
 
 const routes = [{
     path: '/',
-    redirect: '/control/index',
-    name: '首页',
+    name: 'login',
     hidden: false,
-    component: Layout
+    component: login,
+    // component: Layout
   },
+  // {
+  //   name: "index",
+  //   path: "/control/index",
+  //   hidden: false,
+  //   components: {
+  //     default: () => import('@/views/control/index.vue'),
+  //   }
+  // },
   //工作台
   {
-    path: '/control',
-    redirect: '/control/index',
+    path: '/index',
+    redirect: '/index',
     name: '工作台',
     icon: 'icongongzuotai',
     hidden: false,
     component: Layout,
     children: [{
-        path: '/control/index',
-        name: '工作台-主页',
+        path: '/index',
+        name: 'index',
         meta: 'no',
         hidden: false,
         components: {

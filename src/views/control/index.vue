@@ -18,22 +18,30 @@
                 <div>
                   <p>报价</p>
                   <b>3</b>
-                  <el-button type="success" size="mini">去处理</el-button>
+                  <el-button type="success" size="mini" style="color:#fff">
+                    <router-link to="/quote/index">去处理</router-link>
+                  </el-button>
                 </div>
                 <div>
                   <p>待发货</p>
                   <b>1</b>
-                  <el-button type="success" size="mini">去处理</el-button>
+                  <el-button type="success" size="mini">
+                    <router-link to="/logistic/index">去处理</router-link>
+                  </el-button>
                 </div>
                 <div>
                   <p>待审订单</p>
                   <b>12</b>
-                  <el-button type="success" size="mini">去处理</el-button>
+                  <el-button type="success" size="mini">
+                    <router-link to="/order/index">去处理</router-link>
+                  </el-button>
                 </div>
                 <div>
                   <p>待收款</p>
                   <b>5</b>
-                  <el-button type="success" size="mini">去处理</el-button>
+                  <el-button type="success" size="mini">
+                    <router-link to="/finance/receivables">去处理</router-link>
+                  </el-button>
                 </div>
               </div>
             </div>
@@ -138,7 +146,7 @@ export default {
 };
 </script>
 
-<style lang='scss'>
+<style lang='scss' sclope>
 .control {
   min-width: 1650px;
 
@@ -302,5 +310,8 @@ export default {
       background: #f5f5f5;
     }
   }
+}
+.to-do-num /deep/ .el-button span a {
+  color: #fff;
 }
 </style>
