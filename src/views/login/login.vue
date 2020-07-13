@@ -40,9 +40,7 @@ export default {
       }
     };
   },
-
   components: {},
-
   methods: {
     submitForm(formName) {
       this.$refs[formName].validate(valid => {
@@ -52,7 +50,10 @@ export default {
             password: this.ruleForm.name1
           };
           login(data).then(res => {
+            console.log(res);
             this.res("登录成功");
+            sessionStorage.removeItem("token");
+            sessionStorage.setItem("token", res);
             this.$router.push({ name: "index" });
           });
         } else {
