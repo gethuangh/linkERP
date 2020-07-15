@@ -21,7 +21,7 @@
           <p class="newP">时间</p>
           <div class="time" style="width:120px;">
             <p>时间段</p>
-            <selects :pla="pla" @fnc="getValue" @pick="getValue" :options="opstions"></selects>
+            <selects :pla="pla" @fnc="getValue" @pick="getValue" :options="opstions1"></selects>
           </div>
 
           <div class="time">
@@ -197,7 +197,8 @@ export default {
         }
       ],
       checkList: [],
-      opstions: [
+      opstions: [],
+      opstions1: [
         {
           value: "今天",
           label: "今天"
@@ -217,12 +218,6 @@ export default {
         {
           value: "本年度",
           label: "本年度"
-        }
-      ],
-      opstions1: [
-        {
-          value: "选项4",
-          label: "龙须面"
         }
       ],
       opstions2: [
